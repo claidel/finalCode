@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register For Html Css</title>
+<link rel="stylesheet" href="/static/styles/style.css">
+</head>
+<body>
+    <div class="login-form">
+        <h1>Register</h1>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Register</h2>
+                    <form action="{{ url_for('register') }}" method="post">
+                  		<input type="text" id="name" class="form-control" name="name"  placeholder="name" required autofocus="">
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Email" required autofocus="">
+                        <input type="password" id="password" class="form-control" name="password"  placeholder="User Password" required autofocus="">
+                         <button class="btn btn-primary" type="submit">
+                            Register
+                         </button>
+
+                    </form>
+                    <p class="bottom">Already have an account?  <a class="bottom" href="{{url_for('login')}}"> Login here</a></p>
+
+                </div>
+                <div class="form-img">
+                    <img src="/static/styles/bg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
